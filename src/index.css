@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-wallpaper{
+  background-image: url("/ventura-wallpaper.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+#dock{
+  --scale: 1;
+}
+
+#dock img{
+  /*font-size: calc(6rem * var(--scale));*/
+  position: relative;
+  scale: var(--scale);
+  top: calc((6rem * var(--scale) - 6rem) / 2 * -1);
+  transition: 150ms all ease-out;
+}
