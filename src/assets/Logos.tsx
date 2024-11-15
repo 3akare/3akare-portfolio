@@ -1,5 +1,5 @@
 import {SVGProps, useEffect, useState} from "react";
-import folder from "../../public/folder.png";
+import folder from "/public/folder.png";
 
 export function AppleLogo(props: SVGProps<SVGSVGElement>) {
   return (
